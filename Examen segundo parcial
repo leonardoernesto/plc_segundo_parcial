@@ -1,0 +1,35 @@
+print("Bienveido a la cafeteria de Ana")
+print("  ")
+print("¿que tipo de bebida va a llevar?")
+print("Tenemos:")
+print("1)Café")
+print("2)Té")
+print("3)Chocolate caliente")
+beb=int(input("Porfavor escriba el numero de la bebida que va a ordenar:" ))
+print("  ")
+print("Antes de mandar su orden, ¿me podria decir a que hora nos encotramos?")
+print("usando el formato de 24hrs, ejemplo: 15")
+hr=int(input(":  "))
+print("  ")
+if beb==1 or beb==2 and hr>=7 or hr<=9:
+    print("te recomendamos una bebida caliente")
+elif beb==2 or beb==3 and hr>=12 and hr<=14:
+  print("te recomendamos una bebida fría")
+else:
+  print("ahora escoje la temperatura de tu bebida al gusto")
+print("  ")
+if hr>=6 and  hr<=9:
+  print("Te recordamos que a esta hora las bebidas calientes se sirven mas rapido")
+else:
+  print("Recordatorio: tu bebida podria tardar por la hora del dia")
+print("  ")
+print("¿a que temperatura quiere su bebida en grados celcius?")
+c=int(input(":  "))
+if c<50:
+  print("debe esperar a que se caliente su bebida")
+elif c>=50 and c<=70:
+  print("Su bebida se puede servir de inmediato")
+else:
+  print("Su bebida va a estar demasiado caliente, solo espere a que se enfrie")
+print("  ")
+print("Gracias por ordenar en nuestra cafeteria por favor espere su orden")
